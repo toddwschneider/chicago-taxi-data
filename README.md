@@ -14,6 +14,8 @@ Both are available via [Homebrew](http://brew.sh/) on Mac OS X
 
 ##### 2. Download and import Chicago taxi data
 
+Note: the raw data is a single uncompressed ~40GB .csv file, it will take a little while to download!
+
 ```
 ./download_raw_data.sh
 ./initialize_database.sh
@@ -31,7 +33,7 @@ Both are available via [Homebrew](http://brew.sh/) on Mac OS X
 - Chicago does not include precise timestamps, instead rounds pickups and drop offs to 15-minute intervals
 - Chicago does not include any data from ridesharing companies like Uber and Lyft
 - Chicago contains just over 100 million rows, making it significantly smaller than NYC's 1.3 billion rows
-- Chicago requires significantly less preprocessing and has fewer unexplained data abnormalities than the NYC data.
+- Chicago requires significantly less preprocessing and has fewer unexplained data abnormalities than the NYC data
 
 The last two points in particular suggest that the Chicago dataset is easier to work with than the NYC dataset
 

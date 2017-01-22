@@ -2,9 +2,9 @@ CREATE EXTENSION postgis;
 
 CREATE TABLE trips_raw (
   trip_id varchar primary key,
-  external_taxi_id varchar,
-  trip_start timestamp without time zone,
-  trip_end timestamp without time zone,
+  taxi_id varchar,
+  trip_start_timestamp timestamp without time zone,
+  trip_end_timestamp timestamp without time zone,
   trip_seconds numeric,
   trip_miles numeric,
   pickup_census_tract varchar,

@@ -22,6 +22,14 @@ Note: the raw data is a single uncompressed ~40GB .csv file, it will take a litt
 ./import_trip_data.sh
 ```
 
+New data is available monthly. Once you've run the full setup, in future you can download and process only the latest data by running
+
+```
+./update_trips_data.sh
+```
+
+This has the advantage of not downloading the entire 40 GB dataset every time you want to update a new month
+
 ##### 3. Analysis
 
 `prepare_analysis.sql` and `analysis.R` scripts to do analysis in Postgres and [R](https://www.r-project.org/)

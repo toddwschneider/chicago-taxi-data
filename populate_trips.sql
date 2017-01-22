@@ -1,14 +1,14 @@
 INSERT INTO taxis (external_id)
-SELECT DISTINCT external_taxi_id
+SELECT DISTINCT taxi_id
 FROM trips_raw
-WHERE external_taxi_id NOT IN (SELECT external_id FROM taxis);
+WHERE taxi_id NOT IN (SELECT external_id FROM taxis);
 
 INSERT INTO trips
 SELECT
   trip_id,
   taxis.id,
-  trip_start,
-  trip_end,
+  trip_start_timestamp,
+  trip_end_timestamp,
   trip_seconds,
   trip_miles,
   pickup_census_tract,
@@ -28,6 +28,7 @@ SELECT
   dropoff_centroid_longitude,
   community_areas
 FROM trips_raw t, taxis
-WHERE t.external_taxi_id = taxis.external_id;
+WHERE t.taxi_id = taxis.external_id
+ON CONFLICT DO NOTHING;
 
 TRUNCATE TABLE trips_raw;

@@ -1,3 +1,5 @@
 .Rapp.history
 .DS_Store
 ggmapTemp.png
+data/taxi_trips.csv
+data/tnp_trips.csv

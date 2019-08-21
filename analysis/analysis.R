@@ -1,3 +1,12 @@
+# Note:
+#
+# This script was originally written in January 2017 and has not been
+# maintained as the dataset schema has evolved. In particular, the dataset did
+# not include TNP trips when this script was written.
+#
+# See https://github.com/toddwschneider/chicago-taxi-data/tree/41958731cffbd6ecafaa1dac048e0274e6b71305
+# for the code/schema as it was at the time this script was written
+
 library(dplyr)
 library(ggplot2)
 library(scales)

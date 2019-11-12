@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "`date`: beginning raw taxi data load"
-schema=`head -n 1 data/taxi_trips.csv | tr -s ' ' | tr ' ' '_' | tr '[:upper:]' '[:lower:]'`
+schema=`head -n 1 data/taxi_trips.csv`
 cat data/taxi_trips.csv | psql chicago-taxi-data -c "COPY taxi_trips_raw (${schema}) FROM stdin CSV HEADER;"
 
 echo "`date`: finished raw taxi data load; populating trips data"

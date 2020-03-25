@@ -9,11 +9,7 @@ Used originally in support of this post: https://toddwschneider.com/posts/chicag
 
 This repo is something of a companion to the [nyc-taxi-data](https://github.com/toddwschneider/nyc-taxi-data) repo. The repos share some similar code and structure, but do not explicitly depend on each other.
 
-Statistics through June 30, 2019:
-
-- 256 million trips
-  - 183 million taxi
-  - 73 million TNP
+As of Q1 2020, the Chicago taxi dataset contains nearly 200 million rows, while the TNP dataset is around 130 million rows.
 
 ## Instructions
 

@@ -3,3 +3,6 @@
 ggmapTemp.png
 data/taxi_trips.csv
 data/tnp_trips.csv
+analysis/surge_pricing/data/chicago_trips*.csv
+analysis/surge_pricing/data/chicago_trips*.csv.gz
+analysis/surge_pricing/export_data/*.*
